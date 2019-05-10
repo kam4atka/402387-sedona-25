@@ -5,8 +5,136 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header>
+      <a class="header__logo">
+        <img src="https://placehold.it/140x72" alt="Переход на главную страницу сайта">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href=#>Информация</a>
+          </li>
+          <li class="header__nav-item">
+            <a href=#>Фото и видео</a>
+          </li>
+          <li class="header__nav-item">
+            <a href=#>Карта штата</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="hotels.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Поиск арендного жилья в городе Седона</h1>
+      <section class="greeting">
+        <h2 class="visually-hidden">Приветствие</h2>
+        <p>
+          <span>Welcome</span>
+          <span>to the gorgeous</span>
+          <span>Sedona</span>
+        </p>
+        <blockquote>Because the Grand Canyon sucks!</blockquote>
+      </section>
+      <section class="reasons">
+        <h2 class="visually-hidden">Особенности городка Седона</h2>
+        <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <ul class="reasons__list">
+          <li class="reasons__item">
+            <section>
+              <div class="reason__item-wrap reason__item_long reason__item_left">
+                <header>Настоящий городок</header>
+                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <ul>
+                <li>
+                  <span>Жильё</span>
+                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </li>
+                <li>
+                  <span>Еда</span>
+                  <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                </li>
+                <li>
+                  <span>Сувениры</span>
+                  <p>Не только китайского, но и местного производства!</p>
+                </li>
+              </ul>
+            </section>
+          </li>
+          <li class="reasons__item">
+            <section>
+              <div class="reason__item-wrap reason__item_long reason__item_right">
+                <header>Там есть мост дьявола</header>
+                <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+              </div>
+            </section>
+          </li>
+          <li class="reasons__item">
+            <section>
+              <div class="reason__item-wrap">
+                <header>Небольшая площадь</header>
+                <p>Все достопримечательности находятся очень близко</p>
+              </div>
+            </section>
+          </li>
+          <li class="reasons__item">
+            <section>
+              <div class="reason__item-wrap">
+                <header>Красивая дорога</header>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </section>
+          </li>
+          <li class="reasons__item">
+            <section>
+              <div class="reason__item-wrap">
+                <header>Мало туристов</header>
+                <p>Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
+            </section>
+          </li>
+        </ul>
+      </section>
+      <section class="search">
+        <h2 class="visually-hidden">Поиск гостиниц в городе Седона</h2>
+        <span>Заинтересовались?</span>
+        <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <a href="#">Поиск гостиницы в Седоне</a>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта города Седона</h2>
+        <img src="https://placehold.it/1200x594" alt="Карта города Седона">
+      </section>
+    </main>
+    <footer>
+      <div>
+        <a href="#">#VISITSEDONA</a>
+      </div>
+      <div class="footer__social">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#">Twitter</a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#">Facebook</a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <span>Website by</span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="https://placehold.it/115x41" alt="Переход на сайт компании htmlacademy.ru - разработчика сайта">
+        </a>
+      </div>
+    </footer>
+    <section class="modal">
+      <!-- модальное окно с формой выбора параметров поиска -->
+    </section>
   </body>
 </html>
