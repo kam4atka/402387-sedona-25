@@ -49,40 +49,38 @@
       </section>
       <section class="results">
         <h2 class="visually-hidden">Результаты поиска</h2>
-        <header class="results__header">
-          <div class="results__information">
-            <span class="information__title">Найдено:</span>
-            <span class="information__count">3</span>
+        <dl class="results__information">
+          <dt class="information__title">Найдено:</dt>
+          <dd class="information__count">3</dd>
+        </dl>
+        <div class="results__sorting">
+          <h3 class="visually-hidden">Сортировка результатов поиска</h3>
+          <span class="sorting__title">Сортировка:</span>
+          <ul class="sorting__list">
+            <li class="sorting__item">
+              <a href="#">По цене</a>
+            </li>
+            <li class="sorting__item">
+              <a href="#">По типу</a>
+            </li>
+            <li class="sorting__item">
+              <a href="#">По рейтингу</a>
+            </li>
+          </ul>
+          <div>
+            <a class="sorting__increase" href="#">increase</a>
+            <a class="sorting__decrease sorting__active" href="#">decrease</a>
           </div>
-          <section class="results__sorting">
-            <h3 class="visually-hidden">Сортировка результатов поиска</h2>
-            <span class="sorting__title">Сортировка:</span>
-            <ul class="sorting__list">
-              <li class="sorting__item">
-                <a href="#">По цене</a>
-              </li>
-              <li class="sorting__item">
-                <a href="#">По типу</a>
-              </li>
-              <li class="sorting__item">
-                <a href="#">По рейтингу</a>
-              </li>
-            </ul>
-            <div>
-              <a class="sorting__increase" href="#">increase</a>
-              <a class="sorting__decrease sorting__active" href="#">decrease</a>
-            </div>
-          </section>
-        </header>
+        </div>
         <section class="results__list">
           <article class="results__item">
             <div class="result__item-image">
               <img src="https://placehold.it/135x90" alt="Фотография Amara Resort & Spa">
             </div>
             <div class="result__item-desc">
-              <span class="result__item-name">Amara Resort & Spa</span>
-              <span class="result__item-status">Гостиница</span>
-              <span class="result__item-price">От 4000 Р.</span>
+              <h4 class="result__item-name">Amara Resort & Spa</h4>
+              <p class="result__item-status">Гостиница</p>
+              <p class="result__item-price">От 4000 Р.</p>
               <a href="#">Подробнее</a>
               <a href="#">Забронировать</a>
             </div>
@@ -97,9 +95,9 @@
               <img src="https://placehold.it/135x90" alt="Фотография Desert Quail Inn">
             </div>
             <div class="result__item-desc">
-              <span class="result__item-name">Desert Quail Inn</span>
-              <span class="result__item-status">Мотель</span>
-              <span class="result__item-price">От 3000 Р.</span>
+              <h4 class="result__item-name">Desert Quail Inn</h4>
+              <p class="result__item-status">Мотель</p>
+              <p class="result__item-price">От 3000 Р.</p>
               <a href="#">Подробнее</a>
               <a href="#">Забронировать</a>
             </div>
@@ -114,9 +112,9 @@
               <img src="https://placehold.it/135x90" alt="Фотография Villas at Poco Diablo">
             </div>
             <div class="result__item-desc">
-              <span class="result__item-name">Villas at Poco Diablo</span>
-              <span class="result__item-status">Апартаменты</span>
-              <span class="result__item-price">От 2000 Р.</span>
+              <h4 class="result__item-name">Villas at Poco Diablo</h4>
+              <p class="result__item-status">Апартаменты</p>
+              <p class="result__item-price">От 2000 Р.</p>
               <a href="#">Подробнее</a>
               <a href="#">Забронировать</a>
             </div>
