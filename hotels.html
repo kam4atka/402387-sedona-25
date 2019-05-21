@@ -30,22 +30,56 @@
       <h1 class="visually-hidden">Отели города Седона</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтры для поиска</h2>
-        <div class="filters__block">
-          <span>Инфраструктура:</span>
-          <!-- Временно разметил тэгом span. В дальнейшем заменю на тэг legend -->
-          <!-- Параметры фильтрации по данному критерию -->
-        </div>
-        <div class="filters__block">
-          <span>Тип жилья:</span>
-          <!-- Временно разметил тэгом span. В дальнейшем заменю на тэг legend -->
-          <!-- Параметры фильтрации по данному критерию -->
-        </div>
-        <div class="filters__block">
-          <span>Стоимость в сутки (Р):</span>
-          <!-- Временно разметил тэгом span. В дальнейшем заменю на тэг legend -->
-          <!-- Параметры фильтрации по данному критерию -->
-        </div>
-        <button class="filters__button">Показать</button>
+        <form class="filter__list" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter__block">
+            <legend class="filter__block-title">Инфраструктура:</legend>
+            <label>
+              <input type="checkbox" name="additing-poll" id="additing-poll" checked>
+              Бассейн
+            </label>
+            <label>
+              <input type="checkbox" name="additing-parking" id="additing-parking">
+              Парковка
+            </label>
+            <label>
+              <input type="checkbox" name="additing-wifi" id="additing-wifi">
+              wi-fi
+            </label>
+          </fieldset>
+          <fieldset class="filter__block">
+            <legend class="filter__block-title">Тип жилья:</legend>
+            <label>
+              <input type="checkbox" name="type-hotel" id="type-hotel" checked>
+              Гостиница
+            </label>
+            <label>
+              <input type="checkbox" name="type-motel" id="type-motel" checked>
+              Мотель
+            </label>
+            <label>
+              <input type="checkbox" name="type-apartment" id="type-apartment" checked>
+              Аппартаменты
+            </label>
+          </fieldset>
+          <fieldset class="filter__block">
+            <legend class="filter__block-title">Стоимость в сутки (Р):</legend>
+            <div class="range">
+              <div class="range-price">
+                <label class="range-price-label">от
+                  <input class="range-price-input" type="text" name="range-min" id="price-min" value="0">
+                </label>
+                <label class="range-price-label">до
+                  <input class="range-price-input" type="text" name="range-min" id="price-max" value="3000">
+                </label>
+                <div class="range-line">
+                  <span class="range-roller roller-min"></span>
+                  <span class="range-roller roller-max"></span>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <button class="filters__button">Показать</button>
+        </form>
       </section>
       <section class="results">
         <h2 class="visually-hidden">Результаты поиска</h2>
