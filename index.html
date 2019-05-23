@@ -35,69 +35,69 @@
         <img src="img/hero-intro.svg" height="353" width="459" alt="Welcome to gorgeous Sedona!">
       </section>
       <section class="reasons">
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <h2 class="reasons__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="reasons__desc">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <div class="reasons__list">
           <div class="reasons__item">
             <div class="reason__item-wrap reason__item_long reason__item_left">
               <div class="reason__item-inner">
-                <h3>Настоящий городок</h3>
-                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                <h3 class="reason__item-title">Настоящий городок</h3>
+                <p class="reason__item-desc">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
             </div>
-            <ul>
-              <li>
-                <span>Жильё</span>
-                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <ul class="reason__sublist">
+              <li class="reason__subitem">
+                <h4 class="reason__subitem-title">Жильё</h4>
+                <p class="reason__subitem-desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
-              <li>
-                <span>Еда</span>
-                <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+              <li class="reason__subitem">
+                <h4 class="reason__subitem-title">Еда</h4>
+                <p class="reason__subitem-desc">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
               </li>
-              <li>
-                <span>Сувениры</span>
-                <p>Не только китайского, но и местного производства!</p>
+              <li class="reason__subitem">
+                <h4 class="reason__subitem-title">Сувениры</h4>
+                <p class="reason__subitem-desc">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </div>
           <div class="reasons__item">
             <div class="reason__item-wrap reason__item_long reason__item_right">
               <div class="reason__item-inner">
-                <h3>Там есть мост дьявола</h3>
-                <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+                <h3 class="reason__item-title">Там есть мост дьявола</h3>
+                <p class="reason__item-desc">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
               </div>
             </div>
           </div>
           <div class="reasons__item">
             <div class="reason__item-wrap">
               <div class="reason__item-inner">
-                <h3>Небольшая площадь</h3>
-                <p>Все достопримечательности находятся очень близко</p>
+                <h3 class="reason__item-title">Небольшая площадь</h3>
+                <p class="reason__item-desc">Все достопримечательности находятся очень близко</p>
               </div>
             </div>
           </div>
           <div class="reasons__item">
             <div class="reason__item-wrap">
               <div class="reason__item-inner">
-                <h3>Красивая дорога</h3>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <h3 class="reason__item-title">Красивая дорога</h3>
+                <p class="reason__item-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </div>
           </div>
           <div class="reasons__item">
             <div class="reason__item-wrap">
               <div class="reason__item-inner">
-                <h3>Мало туристов</h3>
-                <p>Большинство едет в Гранд Каньон и толпится там</p>
+                <h3 class="reason__item-title">Мало туристов</h3>
+                <p class="reason__item-desc">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="search">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#">Поиск гостиницы в Седоне</a>
+        <h2 class="search__title">Заинтересовались?</h2>
+        <p class="search__desc">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <a class="search__button" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта города Седона</h2>
@@ -105,7 +105,7 @@
       </section>
     </main>
     <footer>
-      <div>
+      <div class="footer__homelink">
         <a href="#">#VISITSEDONA</a>
       </div>
       <div class="footer__social">
@@ -129,24 +129,24 @@
       </div>
     </footer>
     <section class="modal">
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <div class="modal-item">
+      <form class="booking__form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="booking__item">
           <label for="modal-datain">Дата заезда</label>
           <input type="date" value="2018-05-17" name="datain" id="modal-datain">
         </div>
-        <div class="modal-item">
+        <div class="booking__item">
           <label for="modal-dataout">Дата выезда</label>
           <input type="date" value="2018-06-03"  name="dataout" id="modal-dataout">
         </div>
-        <div class="modal-item">
+        <div class="booking__item">
           <label for="modal-senior">Взрослые</label>
           <input type="number" value="2"  name="senior" id="modal-senior">
         </div>
-        <div class="modal-item">
+        <div class="booking__item">
           <label for="modal-junior">Дети</label>
           <input type="number" value="0"  name="junior" id="modal-junior">
         </div>
-        <button type="submit">Найти</button>
+        <button class="booking__button" type="submit">Найти</button>
       </form>
     </section>
   </body>

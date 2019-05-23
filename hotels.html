@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -20,7 +22,7 @@
           <li class="header__nav-item">
             <a href=#>Карта штата</a>
           </li>
-          <li class="header__nav-item">
+          <li class="header__nav-item header__nav-item_active">
             <a href="hotels.html">Гостиницы</a>
           </li>
         </ul>
@@ -30,33 +32,33 @@
       <h1 class="visually-hidden">Отели города Седона</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтры для поиска</h2>
-        <form class="filter__list" action="https://echo.htmlacademy.ru" method="post">
+        <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="filter__block">
             <legend class="filter__block-title">Инфраструктура:</legend>
-            <label>
-              <input type="checkbox" name="additing-poll" id="additing-poll" checked>
+            <label class="filter__block-label">
+              <input class="filter__block-input" type="checkbox" name="additing-poll" id="additing-poll" checked>
               Бассейн
             </label>
-            <label>
+            <label class="filter__block-label">
               <input type="checkbox" name="additing-parking" id="additing-parking">
               Парковка
             </label>
-            <label>
+            <label class="filter__block-label">
               <input type="checkbox" name="additing-wifi" id="additing-wifi">
               wi-fi
             </label>
           </fieldset>
           <fieldset class="filter__block">
             <legend class="filter__block-title">Тип жилья:</legend>
-            <label>
+            <label class="filter__block-label">
               <input type="checkbox" name="type-hotel" id="type-hotel" checked>
               Гостиница
             </label>
-            <label>
+            <label class="filter__block-label">
               <input type="checkbox" name="type-motel" id="type-motel" checked>
               Мотель
             </label>
-            <label>
+            <label class="filter__block-label">
               <input type="checkbox" name="type-apartment" id="type-apartment" checked>
               Аппартаменты
             </label>
@@ -78,7 +80,7 @@
               </div>
             </div>
           </fieldset>
-          <button class="filters__button">Показать</button>
+          <button class="filter__button">Показать</button>
         </form>
       </section>
       <section class="results">
@@ -91,7 +93,7 @@
           <h3 class="visually-hidden">Сортировка результатов поиска</h3>
           <span class="sorting__title">Сортировка:</span>
           <ul class="sorting__list">
-            <li class="sorting__item">
+            <li class="sorting__item sorting__item_active">
               <a href="#">По цене</a>
             </li>
             <li class="sorting__item">
@@ -112,14 +114,14 @@
               <img src="img/img-hotel-01.jpg" height="90" width="135" alt="Фотография Amara Resort & Spa">
             </div>
             <div class="result__item-desc">
-              <h4 class="result__item-name">Amara Resort & Spa</h4>
+              <a class="result__item-name" href="#">Amara Resort & Spa</a>
               <p class="result__item-status">Гостиница</p>
               <p class="result__item-price">От 4000 Р.</p>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
+              <a class="result__button-more" href="#">Подробнее</a>
+              <a class="result__button-book" href="#">Забронировать</a>
             </div>
             <div class="result__item-rating">
-              <span>Рейтинг: 8,5</span>
+              <span class="result__item-score">Рейтинг: 8,5</span>
               <!-- Оценка звездочками будет реализована с помощью псевдоэлемента ::before -->
               <!-- Поскольку данная информация дублирует рейтинг в текстовом представлении -->
             </div>
@@ -129,14 +131,14 @@
               <img src="img/img-hotel-02.jpg" height="90" width="135" alt="Фотография Desert Quail Inn">
             </div>
             <div class="result__item-desc">
-              <h4 class="result__item-name">Desert Quail Inn</h4>
+              <a class="result__item-name" href="#">Desert Quail Inn</a>
               <p class="result__item-status">Мотель</p>
               <p class="result__item-price">От 3000 Р.</p>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
+              <a class="result__button-more" href="#">Подробнее</a>
+              <a class="result__button-book" href="#">Забронировать</a>
             </div>
             <div class="result__item-rating">
-              <span>Рейтинг: 8,9</span>
+              <span class="result__item-score">Рейтинг: 8,9</span>
               <!-- Оценка звездочками будет реализована с помощью псевдоэлемента ::before -->
               <!-- Поскольку данная информация дублирует рейтинг в текстовом представлении -->
             </div>
@@ -146,14 +148,14 @@
               <img src="img/img-hotel-03.jpg" height="90" width="135" alt="Фотография Villas at Poco Diablo">
             </div>
             <div class="result__item-desc">
-              <h4 class="result__item-name">Villas at Poco Diablo</h4>
+              <a class="result__item-name" href="#">Villas at Poco Diablo</a>
               <p class="result__item-status">Апартаменты</p>
               <p class="result__item-price">От 2000 Р.</p>
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
+              <a class="result__button-more" href="#">Подробнее</a>
+              <a class="result__button-book" href="#">Забронировать</a>
             </div>
             <div class="result__item-rating">
-              <span>Рейтинг: 9,2</span>
+              <span class="result__item-score">Рейтинг: 9,2</span>
               <!-- Оценка звездочками будет реализована с помощью псевдоэлемента ::before -->
               <!-- Поскольку данная информация дублирует рейтинг в текстовом представлении -->
             </div>
@@ -162,7 +164,7 @@
       </section>
     </main>
     <footer>
-      <div>
+      <div class="footer__homelink">
         <a href="#">#VISITSEDONA</a>
       </div>
       <div class="footer__social">
