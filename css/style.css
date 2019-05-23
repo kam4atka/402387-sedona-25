@@ -182,7 +182,7 @@ img {
   background-color: #503e33;
 }
 
-.footer__homelink a {
+.footer__tag {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -191,6 +191,20 @@ img {
 
 .footer__social-list {
   list-style: none;
+}
+
+.copyright__link:hover,
+.copyright__link:focus {
+  outline: none;
+}
+
+.copyright__link:hover path,
+.copyright__link:focus path {
+  fill: #81b3d2;
+}
+
+.copyright__link:active path {
+  fill: #bdbbbc;
 }
 
 .booking__item label,
@@ -202,12 +216,12 @@ img {
 
 .booking__item input {
   background-color: #f2f2f2;
-  border: 2px solid #f2f2f2;
+  border: 2px solid transparent;
 }
 
 .booking__item input:hover {
   background-color: #ebebeb;
-  border: 2px solid #f2f2f2;
+  border: 2px solid transparent;
   outline: none;
 }
 
