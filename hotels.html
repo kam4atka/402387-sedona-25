@@ -36,48 +36,37 @@
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="filter__block">
               <legend class="filter__block-title">Инфраструктура:</legend>
-              <label class="filter__block-label">
-                <input class="filter__block-input" type="checkbox" name="additing-poll" id="additing-poll" checked>
-                Бассейн
-              </label>
-              <label class="filter__block-label">
-                <input type="checkbox" name="additing-parking" id="additing-parking">
-                Парковка
-              </label>
-              <label class="filter__block-label">
-                <input type="checkbox" name="additing-wifi" id="additing-wifi">
-                wi-fi
-              </label>
+              <input class="visually-hidden" type="checkbox" name="additing-poll" id="additing-poll" checked>
+              <label class="filter__block-label" for="additing-poll">Бассейн</label>
+              <input class="visually-hidden" type="checkbox" name="additing-parking" id="additing-parking">
+              <label class="filter__block-label" for="additing-parking">Парковка</label>
+              <input class="visually-hidden" type="checkbox" name="additing-wifi" id="additing-wifi">
+              <label class="filter__block-label" for="additing-wifi">wi-fi</label>
             </fieldset>
             <fieldset class="filter__block">
               <legend class="filter__block-title">Тип жилья:</legend>
-              <label class="filter__block-label">
-                <input type="checkbox" name="type-hotel" id="type-hotel" checked>
-                Гостиница
-              </label>
-              <label class="filter__block-label">
-                <input type="checkbox" name="type-motel" id="type-motel" checked>
-                Мотель
-              </label>
-              <label class="filter__block-label">
-                <input type="checkbox" name="type-apartment" id="type-apartment" checked>
-                Аппартаменты
-              </label>
+              <input class="visually-hidden" type="checkbox" name="type-hotel" id="type-hotel" checked>
+              <label class="filter__block-label" for="type-hotel">Гостиница</label>
+              <input class="visually-hidden" type="checkbox" name="type-motel" id="type-motel" checked>
+              <label class="filter__block-label" for="type-motel">Мотель</label>
+              <input class="visually-hidden" type="checkbox" name="type-apartment" id="type-apartment" checked>
+              <label class="filter__block-label" for="type-apartment">Аппартаменты</label>
             </fieldset>
-            <fieldset class="filter__block">
+            <fieldset class="filter__block filter__block_price">
               <legend class="filter__block-title">Стоимость в сутки (Р):</legend>
               <div class="range">
-                <div class="range-price">
-                  <label class="range-price-label">от
-                    <input class="range-price-input" type="text" name="range-min" id="price-min" value="0">
+                <div class="range__price">
+                  <label class="range__price-label">от
+                    <input class="range__price-input" type="text" name="range-min" id="price-min" value="0">
                   </label>
-                  <label class="range-price-label">до
-                    <input class="range-price-input" type="text" name="range-min" id="price-max" value="3000">
+                  <span class="range__price-separate"></span>
+                  <label class="range__price-label">до
+                    <input class="range__price-input" type="text" name="range-min" id="price-max" value="3000">
                   </label>
-                  <div class="range-line">
-                    <span class="range-roller roller-min"></span>
-                    <span class="range-roller roller-max"></span>
-                  </div>
+                </div>
+                <div class="range__line">
+                  <span class="range__roller range__roller_min"></span>
+                  <span class="range__roller range__roller-max"></span>
                 </div>
               </div>
               <button class="filter__button">Показать</button>
