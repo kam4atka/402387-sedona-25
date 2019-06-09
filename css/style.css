@@ -1311,6 +1311,14 @@ img {
   padding: 3px 15px;
 }
 
+.map {
+  overflow: hidden;
+}
+
+.map__image {
+  display: block;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1329,9 +1337,8 @@ img {
 }
 
 .main .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  position: relative;
+  margin-top: -127px;
 }
 
 .footer__tag {
