@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="main">
     <div class="wrapper">
@@ -104,11 +104,11 @@
           <h2 class="search__title">Заинтересовались?</h2>
           <p class="search__desc">Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
           <a class="search__button" href="#">Поиск гостиницы в Седоне</a>
-          <section class="modal">
+          <section class="modal modal-show">
             <form class="booking__form" action="https://echo.htmlacademy.ru" method="get">
               <div class="booking__item">
                 <label for="modal-datain">Дата заезда:</label>
-                <input type="text" name="datain" id="modal-datain" value="17.05.2019" placeholder="ДД.ММ.ГГГГ">
+                <input class="modal__datain" type="text" name="datain" id="modal-datain" value="17.05.2019" placeholder="ДД.ММ.ГГГГ">
                 <button class="booking__calendar" type="button">
                   <span class="visually-hidden">Календарь</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
@@ -119,7 +119,7 @@
               </div>
               <div class="booking__item">
                 <label for="modal-dataout">Дата выезда:</label>
-                <input type="text" name="dataout" id="modal-dataout" value="17.06.2019" placeholder="ДД.ММ.ГГГГ">
+                <input class="modal__dataout" type="text" name="dataout" id="modal-dataout" value="17.06.2019" placeholder="ДД.ММ.ГГГГ">
                 <button class="booking__calendar" type="button">
                   <span class="visually-hidden">Календарь</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
@@ -131,13 +131,13 @@
               <div class="booking__item booking__item_short">
                 <label for="modal-senior">Взрослые:</label>
                 <button class="booking__item-button booking__item-button_minus" type="button">Уменьшить</button>
-                <input type="text" value="2"  name="senior" id="modal-senior">
+                <input class="modal__senior" type="text" value="2"  name="senior" id="modal-senior">
                 <button class="booking__item-button  booking__item-button_plus" type="button">Увеличить</button>
               </div>
               <div class="booking__item booking__item_short">
                 <label for="modal-junior">Дети:</label>
                 <button class="booking__item-button booking__item-button_minus" type="button">Уменьшить</button>
-                <input type="text" value="0"  name="junior" id="modal-junior">
+                <input class="modal__junior" type="text" value="0"  name="junior" id="modal-junior">
                 <button class="booking__item-button  booking__item-button_plus" type="button">Увеличить</button>
               </div>
               <button class="booking__send" type="submit">Найти</button>
@@ -189,5 +189,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

@@ -1412,10 +1412,11 @@ img {
 }
 
 .modal {
+  display: none;
   position: absolute;
   top: 100%;
   left: 50%;
-  width: 568px;
+  width: 566px;
   padding: 60px 55px 55px 55px;;
   margin: 0 auto;
   -webkit-transform: translateX(-50%);
@@ -1571,4 +1572,28 @@ img {
 .booking__send {
   width: 100%;
   padding: 16px 0;
+}
+
+.modal-show {
+  display: block;
+  animation-name: modal-show;
+  animation-duration: 1s;
+}
+
+.modal-error {
+  animation-name: modal-shake;
+  animation-duration: 0.5s;
+}
+
+@keyframes modal-show {
+  0%    { opacity: 0; }
+  25%   { opacity: 0.25; }
+  50%   { opacity: 0.5; }
+  100%  { opacity: 1; }
+}
+
+@keyframes modal-shake {
+  0%, 100%  { transform: translateX(-50%); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-48%); }
+  20%, 40%, 60%, 80% { transform: translateX(-52%); }
 }
