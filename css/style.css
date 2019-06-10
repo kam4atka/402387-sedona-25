@@ -345,6 +345,21 @@ img {
   outline: none;
 }
 
+.booking__item-button_minus:hover::before,
+.booking__item-button_minus:focus::before,
+.booking__item-button_plus:hover::before,
+.booking__item-button_plus:focus::before,
+.booking__item-button_plus:hover::after,
+.booking__item-button_plus:focus::after {
+  background-color: #000000;
+}
+
+.booking__item-button_minus:active::before,
+.booking__item-button_plus:active::before,
+.booking__item-button_plus:active::after {
+  background-color: #81b3d2;
+}
+
 .booking__calendar {
   background-color: transparent;
   border: none;
@@ -1249,7 +1264,7 @@ img {
 
 .result__item-status,
 .result__item-price {
-  width: 110px;
+  width: 116px;
   margin: 0;
   padding: 0;
 }
@@ -1292,16 +1307,17 @@ img {
       -ms-flex-pack: end;
           justify-content: flex-end;
   max-width: 155px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .result__rate-star {
   width: 17px;
   height: 17px;
+  margin-top: 3px;
 }
 
 .result__rate-star:not(:first-of-type) {
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .result__item-score {
@@ -1333,18 +1349,23 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 100px 35px 131px;
+  padding: 28px 100px 35px 131px;
 }
 
 .main .footer {
   position: relative;
-  margin-top: -127px;
+  margin-top: -120px;
+  padding: 35px 100px 35px 131px;
 }
 
 .footer__tag {
   margin: 0;
   padding: 0;
   max-width: 150px;
+}
+
+.footer__social {
+  margin-left: 30px;
 }
 
 .footer__social-list {
@@ -1462,7 +1483,7 @@ img {
 }
 
 .booking__item:last-of-type {
-  margin-bottom: 52px;
+  margin-bottom: 55px;
 }
 
 .booking__item label {
@@ -1552,21 +1573,6 @@ img {
   -webkit-transform: translate(-50%, -50%) rotate(90deg);
       -ms-transform: translate(-50%, -50%) rotate(90deg);
           transform: translate(-50%, -50%) rotate(90deg);
-}
-
-.booking__item-button_minus:hover::before,
-.booking__item-button_minus:focus::before,
-.booking__item-button_plus:hover::before,
-.booking__item-button_plus:focus::before,
-.booking__item-button_plus:hover::after,
-.booking__item-button_plus:focus::after {
-  background-color: #000000;
-}
-
-.booking__item-button_minus:active::before,
-.booking__item-button_plus:active::before,
-.booking__item-button_plus:active::after {
-  background-color: #81b3d2;
 }
 
 .booking__send {
