@@ -150,6 +150,7 @@ img {
 }
 
 .reason__item_left {
+  background-color: #81b3d2;
   background-image: url("../img/bg-item-01.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -157,6 +158,7 @@ img {
 }
 
 .reason__item_right {
+  background-color: #81b3d2;
   background-image: url("../img/bg-item-02.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
