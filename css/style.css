@@ -1071,8 +1071,7 @@ img {
 }
 
 .information__title {
-  max-width: 100px;
-  margin-right: 7px;
+  min-width: 105px;
 }
 
 .information__count {
@@ -1102,9 +1101,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  min-width: 135px;
   margin: 0;
   padding: 0;
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .sorting,
@@ -1148,70 +1148,9 @@ img {
   padding-bottom: 60px;
 }
 
-.information__title {
-  margin-right: 7px;
-}
-
-.information__count {
-  margin: 0;
-  padding: 0;
-}
-
-.sorting__title {
-  margin-right: 40px;
-}
-
-.sorting__list {
-  margin: 0;
-  padding: 0;
-}
-
-.sorting__item:not(:last-of-type) {
-  margin-right: 30px;
-}
-
-.results__information {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 0;
-  padding: 0;
-  margin-right: 50px;
-}
-
-.sorting,
-.sorting__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .sorting__list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.sorting {
-  width: 100%;
-}
-
-.sorting__increase {
-  margin-left: auto;
-}
-
-.sorting__decrease {
-  margin-left: 12px;
 }
 
 .results__item {
@@ -1356,7 +1295,7 @@ img {
 
 .main .footer {
   position: relative;
-  margin-top: -120px;
+  margin-top: -128px;
   padding: 35px 100px 35px 131px;
 }
 
@@ -1481,15 +1420,16 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 }
 
 .booking__item:last-of-type {
-  margin-bottom: 55px;
+  margin-bottom: 52px;
 }
 
 .booking__item label {
-  max-width: 95px;
+  width: 95px;
+  min-height: 28px;
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
@@ -1503,7 +1443,7 @@ img {
 .booking__calendar {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
