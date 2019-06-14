@@ -943,7 +943,9 @@ img {
 
 .filter__block-label {
   position: relative;
-  max-width: 250px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 250px;
   padding-left: 40px;
 }
 
@@ -1437,13 +1439,19 @@ img {
 
 .booking__item input {
   width: 345px;
+  min-height: 28px;
   padding: 0px 35px 0px 9px;
+}
+
+.modal__datain,
+.modal__dataout {
+  margin-left: auto;
 }
 
 .booking__calendar {
   position: absolute;
   top: 50%;
-  right: 8px;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
