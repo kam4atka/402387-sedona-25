@@ -920,10 +920,6 @@ img {
           flex-direction: column;
 }
 
-.filter__block:not(:first-of-type) {
-  margin-left: 95px;
-}
-
 .filter__block:last-of-type {
   margin-left: auto;
 }
@@ -945,7 +941,7 @@ img {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  width: 250px;
+  width: 230px;
   padding-left: 40px;
 }
 
